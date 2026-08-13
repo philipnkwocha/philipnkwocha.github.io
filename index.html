@@ -45,6 +45,29 @@
     font-size: 15px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  /* Inter sharp technical tuning */
+  h1, h2, h3 {
+    font-feature-settings: 'ss01', 'cv01', 'cv11';
+    font-optical-sizing: auto;
+  }
+
+  h1 {
+    font-weight: 700;
+    letter-spacing: -0.04em;
+  }
+
+  h2 {
+    font-weight: 700;
+    letter-spacing: -0.035em;
+  }
+
+  p, li {
+    font-feature-settings: 'cv02', 'cv11';
+    letter-spacing: -0.005em;
   }
 
   /* ── NAV ── */
@@ -788,7 +811,7 @@
     <a href="https://fit-check-gold-one.vercel.app" target="_blank" class="proj-card">
       <div class="proj-icon">👗</div>
       <div class="proj-title">FitCheck — AI Wardrobe App</div>
-      <div class="proj-desc">Full-stack AI web app built with React and the Claude API. Users catalog their wardrobe, pick a vibe and occasion, and Claude generates a complete outfit — flagging missing items. Deployed live on Vercel with secure API key management and Git-based CI/CD.</div>
+      <div class="proj-desc">Full-stack AI web app built with React and the Claude API. Users catalog their wardrobe, pick a vibe and occasion, and Claude generates a complete outfit — flagging missing items. Deployed live on Vercel with secure API key management and Git-based CI/CD. <em style="color:var(--text-3);">AI generation temporarily paused — UI and full architecture viewable.</em></div>
       <div class="proj-tags">
         <span class="tag">React</span><span class="tag">Claude API</span><span class="tag">Vercel</span>
         <span class="tag">DevSecOps</span><span class="tag">CI/CD</span>
