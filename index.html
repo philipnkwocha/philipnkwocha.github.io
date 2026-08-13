@@ -718,15 +718,19 @@
       <span class="t-blank"></span>
       <span class="t-line"><span class="t-prompt">❯ </span><span class="t-cmd">ls ~/lab/</span></span>
       <span class="t-out"><span class="t-val">wazuh-siem/</span>   <span class="t-val">hardening/</span></span>
-      <span class="t-out"><span class="t-val">log-analysis/</span> <span class="t-val">network-sec/</span></span>
-      <span class="t-out"><span class="t-val">pentests/</span></span>
+      <span class="t-out"><span class="t-val">log-analysis/</span> <span class="t-val">pentests/</span></span>
+      <span class="t-out"><span class="t-val">fitcheck-app/</span> <span class="t-val">network-sec/</span></span>
       <span class="t-blank"></span>
-      <span class="t-line"><span class="t-prompt">❯ </span><span class="t-cmd">nmap -sV 10.0.2.8</span></span>
-      <span class="t-out"><span class="t-green">22/tcp</span>  open  OpenSSH 9.2p1</span>
-      <span class="t-out"><span class="t-green">80/tcp</span>  open  Apache 2.4.62</span>
+      <span class="t-line"><span class="t-prompt">❯ </span><span class="t-cmd">cat pentests/results.txt</span></span>
+      <span class="t-out"><span class="t-green">[✓]</span> Lower I  — root via /etc/group</span>
+      <span class="t-out"><span class="t-green">[✓]</span> Lower II — root via /etc/shadow</span>
       <span class="t-blank"></span>
-      <span class="t-line"><span class="t-prompt">❯ </span><span class="t-cmd">sudo su</span></span>
-      <span class="t-out"><span class="t-green">root@lower:/home/lancer#</span> <span class="cursor"></span></span>
+      <span class="t-line"><span class="t-prompt">❯ </span><span class="t-cmd">curl fitcheck.vercel.app</span></span>
+      <span class="t-out"><span class="t-green">200 OK</span> — AI wardrobe app live</span>
+      <span class="t-blank"></span>
+      <span class="t-line"><span class="t-prompt">❯ </span><span class="t-cmd">whoami --status</span></span>
+      <span class="t-out"><span class="t-green">✔</span> Open to SOC &amp; GRC roles</span>
+      <span class="t-line"><span class="t-prompt">❯ </span><span class="cursor"></span></span>
     </div>
   </div>
 </div>
@@ -735,7 +739,7 @@
 <div class="stats-strip">
   <div class="stats-inner">
     <div>
-      <span class="stat-num">5+</span>
+      <span class="stat-num">7+</span>
       <span class="stat-label">Lab Projects</span>
     </div>
     <div>
@@ -747,7 +751,7 @@
       <span class="stat-label">Hours Hands-On</span>
     </div>
     <div>
-      <span class="stat-num">1</span>
+      <span class="stat-num">2</span>
       <span class="stat-label">Root Flags Captured</span>
     </div>
   </div>
@@ -777,14 +781,26 @@
       </div>
     </a>
 
-    <!-- Pentest -->
+    <!-- FitCheck -->
+    <a href="https://fit-check-gold-one.vercel.app" target="_blank" class="proj-card">
+      <div class="proj-icon">👗</div>
+      <div class="proj-title">FitCheck — AI Wardrobe App</div>
+      <div class="proj-desc">Full-stack AI web app built with React and the Claude API. Users catalog their wardrobe, pick a vibe and occasion, and Claude generates a complete outfit — flagging missing items. Deployed live on Vercel with secure API key management and Git-based CI/CD.</div>
+      <div class="proj-tags">
+        <span class="tag">React</span><span class="tag">Claude API</span><span class="tag">Vercel</span>
+        <span class="tag">DevSecOps</span><span class="tag">CI/CD</span>
+      </div>
+      <div class="proj-link">View live app</div>
+    </a>
+
+    <!-- Pentests -->
     <a href="https://sites.google.com/view/philip-nkwocha/pentests" class="proj-card">
       <div class="proj-icon">🔍</div>
-      <div class="proj-title">VulnYX Lower — Penetration Test</div>
-      <div class="proj-desc">Full black-box pentest achieving root access through vhost enumeration, SSH brute-force with a CeWL wordlist, and writable /etc/group privilege escalation. Formal PDF report included.</div>
+      <div class="proj-title">VulnYX Penetration Tests — Lower I &amp; II</div>
+      <div class="proj-desc">Two full black-box pentests, each achieving root through a different chain. Lower I: vhost enumeration → CeWL wordlist → writable /etc/group. Lower II: SSH banner enumeration → Telnet brute-force → shadow group /etc/shadow overwrite. Formal PDF reports for both.</div>
       <div class="proj-tags">
         <span class="tag">Nmap</span><span class="tag">ffuf</span><span class="tag">Hydra</span>
-        <span class="tag">CeWL</span><span class="tag">PrivEsc</span>
+        <span class="tag">CeWL</span><span class="tag">PrivEsc</span><span class="tag">Telnet</span>
       </div>
       <div class="proj-link">View project</div>
     </a>
@@ -878,6 +894,19 @@
         <span class="skill-pill">Risk Assessment</span>
         <span class="skill-pill">ISO 27001</span>
         <span class="skill-pill">Policy Writing</span>
+      </div>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-title">Development &amp; DevSecOps</div>
+      <div class="skill-pills">
+        <span class="skill-pill">React</span>
+        <span class="skill-pill">Claude API</span>
+        <span class="skill-pill">Vercel</span>
+        <span class="skill-pill">Git / GitHub</span>
+        <span class="skill-pill">Secrets Management</span>
+        <span class="skill-pill">CI/CD</span>
+        <span class="skill-pill">Node.js</span>
       </div>
     </div>
   </div>
